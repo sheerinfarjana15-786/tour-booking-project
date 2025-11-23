@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tour Booking - SOUTH INDIA TRAVEL</title>
+  <link rel="stylesheet" href="stylish.css?v=2">
+
+</head>
+
+<body>
+  <div class="page-headings">
+    <h1>SOUTH INDIA TRAVELS</h1>
+    <h2>Book a memorable tour — domestic & international packages</h2>
+  </div>
+
+  <div class="hero">
+
+    <div class="form-panel">
+
+      <form action="insert.php" method="post">
+
+        <div class="form-row">
+          <label>Full Name:</label>
+          <input type="text" name="full_name" required>
+        </div>
+
+        <div class="form-row">
+          <label>Email:</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label>Phone:</label>
+          <input type="text" name="phone" required>
+        </div>
+
+        <div class="form-row">
+          <label>Gender:</label>
+          <select name="gender" required>
+            <option value="">Choose...</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Type of Tour:</label>
+          <select name="tour_type" required>
+            <option value="">Choose...</option>
+            <option value="Family">Family</option>
+            <option value="Corporate">Corporate</option>
+            <option value="Educational">Educational</option>
+            <option value="HoneyMoon">HoneyMoon</option>
+            <option value="Adventure">Adventure</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Package Type:</label>
+          <select name="package_type" required>
+            <option value="">Choose...</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Country:</label>
+          <input type="text" name="country" placeholder="eg. India, Singapore" required>
+        </div>
+
+        <div class="form-row">
+          <label>Destination / City:</label>
+          <input type="text" name="destination" required>
+        </div>
+
+        <div class="form-row">
+          <label>Travel Date:</label>
+          <input type="date" name="travel_date" required>
+        </div>
+
+        <div class="form-row">
+          <label>Number of People:</label>
+          <input type="number" name="no_of_people" required>
+        </div>
+
+        <div class="form-row">
+          <label>Message / Special Requests:</label>
+          <textarea name="message"></textarea>
+        </div>
+
+        <div class="button-row">
+          <button class="primary" type="submit">Book Tour</button>
+        </div>
+
+      </form>
+
+     
+      <a class="view-btn" href="show.php">View All Bookings</a>
+
+    </div>
+  </div>
+
+  <footer>
+    THANK YOU FOR YOUR BOOKING !!! <br>
+    ENJOY YOUR TRIP !!!
+  </footer>
+
+</body>
+</html>
